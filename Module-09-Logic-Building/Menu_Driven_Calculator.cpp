@@ -1,0 +1,40 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+
+    int choice;
+    double a, b;
+
+    cout << "1. Addition\n";
+    cout << "2. Subtraction\n";
+    cout << "3. Multiplication\n";
+    cout << "4. Division\n";
+
+    cin >> choice;
+    cin >> a >> b;
+
+    switch(choice) {
+
+        case 1:
+            cout << a + b;
+            break;
+
+        case 2:
+            cout << a - b;
+            break;
+
+        case 3:
+            cout << a * b;
+            break;
+
+        case 4:
+            cout << a / b;
+            break;
+
+        default:
+            cout << "Invalid Choice";
+    }
+
+    return 0;
+}
